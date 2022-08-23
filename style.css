@@ -1,0 +1,68 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px #1b47007f;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 4%;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    width: 120%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(34, 255, 0), rgba(0, 0, 0, 0));
+}
+.btn-primary{
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    margin: auto;
+    margin-top: 6.5%;
+    background-color: #00cc0a;
+    border-color: rgba(255, 0, 0, 0);
+    box-shadow: 4px 4px #1b47007f;
+    transition: all 1s;
+}
+.btn-primary:hover{
+    background-color: black;
+    border-color: rgba(255, 0, 0, 0);
+    transform: scale(1.5);
+}
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 2em;
+    }
+    .container{
+        margin-top: 5%;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1em;
+
+    }
+    .container{
+        margin-top: 15%;
+    }
+}
